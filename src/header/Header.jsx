@@ -1,7 +1,7 @@
 
 import React, { useEffect, useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import './Header.css';
+import './header.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
