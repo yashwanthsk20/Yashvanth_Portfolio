@@ -5,10 +5,11 @@ import toast, { Toaster } from 'react-hot-toast';
 import './PortfolioGatekeeper.css'; // Import CSS
 
 const EMAILJS_CONFIG = {
-  SERVICE_ID: 'service_w4vb97g',
-  TEMPLATE_ID: 'template_x314zjr',
-  USER_ID: '0Yj2MKF10WJkLI58Y'
+  SERVICE_ID: import.meta.env.VITE_EMAILJS_SERVICE_ID,
+  TEMPLATE_ID: import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+  USER_ID: import.meta.env.VITE_EMAILJS_USER_ID
 };
+
 
 const PortfolioGatekeeper = ({ onVisitorEntry }) => {
   const [currentVisitor, setCurrentVisitor] = useState(null);
