@@ -1,0 +1,29 @@
+#magic-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+#cursor {
+  width: 30px;
+  height: 30px;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  transition: transform 0.15s ease-out;
+  mix-blend-mode: difference;
+  background: transparent;
+  pointer-events: none;
+}
+@media (max-width: 768px) {
+  #magic-cursor {
+    display: none;
+  }
+}
